@@ -1,0 +1,121 @@
+@media screen and (max-width: 800px) {
+    .top .nav {
+        width: fit-content;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(100vh - 30px - var(--triangle-height) * 1);
+        height: 50px;
+        line-height: 50px;
+    }
+    .top .nav a {
+        display: inline-block;
+        width: 100px;
+        padding: 0;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 40px;
+    }
+    .top .nav a:first-child {
+        text-align: right;
+        padding-left: 0;
+        padding-right: 40px;
+    }
+    .top .text {
+        width: calc(100vw - 120px);
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .about h2 {
+        line-height: 50px;
+    }
+    .about p {
+        width: calc(100vw - 60px);
+    }
+    .projects .text {
+        width: calc(100vw - 60px);
+        padding: calc(var(--triangle-height) + 60px) 30px;
+    }
+    .projects .projects-all {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .projects .project-scroll {
+        width: calc(455vw + 45px);
+        max-height: 60vh;
+        overflow-y: hidden;
+    }
+    .projects .project {
+        display: inline-block;
+        max-height: 40vh;
+        max-width: 140vw;
+        vertical-align: middle;
+        margin-right: 15px;
+    }
+    .projects .project .project-visit {
+        padding: 0px 30px;
+    }
+    .row {
+        grid-template-columns: 200px;
+        overflow-x: auto;
+    }
+    .skill-type {
+        white-space: normal;
+    }
+    .skill-type-rate {
+        white-space: nowrap;
+    }
+    .skill {
+        width: fit-content;
+        max-height: 200px;
+        overflow-y: hidden;
+        overflow-wrap: break-word;
+    }
+    .skill#web {
+        grid-column: 1 / 2;
+        grid-row: 1 / 6;
+    }
+    .skill#programming {
+        grid-column: 3 / 6;
+        grid-row: 1 / 6;
+        width: 320px;
+    }
+    .skill#programming .skill-type {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .skill#version-control {
+        grid-column: 6 / 7;
+        grid-row: 1 / 6;
+    }
+    .skill#mobile {
+        grid-column: 7 / 9;
+        grid-row: 1 / 6;
+    }
+    .skill#database {
+        grid-column: 9 / 10;
+        grid-row: 1 / 6;
+    }
+    .contact .text {
+        width: calc(100vw - 60px);
+        padding: calc(var(--triangle-height) + 30px) 30px;
+        padding-bottom: 70px;
+    }
+    .contact .text .form {
+        width: 100%;
+    }
+    .contact .text .form * {
+        width: 100%;
+    }
+    .contact {
+        height: calc(100vh + var(--triangle-height) * 1 + 150px);
+    }
+    .contact .down {
+        top: calc(100vh + 15px);
+    }
+    .contact .footer {
+        left: 30px;
+        bottom: 30px;
+    }
+}
