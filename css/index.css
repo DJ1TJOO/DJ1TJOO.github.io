@@ -18,11 +18,15 @@ body {
 
 .prototype {
     position: fixed;
-    display: block;
+    display: flex;
     background-color: red;
     color: white;
     width: 100vw;
     height: 50px;
+    z-index: 1;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
 }
 
 .top {
