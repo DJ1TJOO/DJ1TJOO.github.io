@@ -3,6 +3,13 @@
     --triangle-height: calc(calc(100vw - var(--scrollwidth)) * 0.16822916666);
 }
 
+@media screen and (min-aspect-ratio: 180/100) {
+    :root {
+        --scrollwidth: 15px;
+        --triangle-height: calc(calc((100vw - var(--scrollwidth)) - 50vw) * 0.16822916666);
+    }
+}
+
 body,
 html {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -157,6 +164,14 @@ body {
     margin: 0;
     font-weight: 400;
     color: white;
+}
+
+.projects .subtitle {
+    display: block;
+    margin: auto;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .projects .project {
@@ -336,6 +351,17 @@ body {
     margin: 0;
     font-weight: 400;
     color: white;
+}
+
+.contact .subtitle {
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    width: 290px;
+    padding: 10px;
+    background-color: red;
+    text-align: center;
 }
 
 .contact .text .form {

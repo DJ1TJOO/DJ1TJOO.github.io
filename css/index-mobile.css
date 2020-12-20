@@ -37,27 +37,19 @@
         padding: calc(var(--triangle-height) + 60px) 30px;
     }
     .projects .projects-all {
-        width: 100%;
-        overflow-x: auto;
-        overflow-y: hidden;
+        width: calc(100vw - 60px);
+        overflow-y: auto;
+        overflow-x: hidden;
     }
     .projects .project-scroll {
-        width: calc(455vw + 45px);
+        width: calc(100vw - 60px);
         max-height: 60vh;
-        overflow-y: hidden;
-    }
-    .projects .project {
-        display: inline-block;
-        max-height: 40vh;
-        max-width: 140vw;
-        vertical-align: middle;
-        margin-right: 15px;
+        overflow-x: hidden;
     }
     .projects .project .project-visit {
         padding: 0px 30px;
     }
     .row {
-        grid-template-columns: 200px;
         overflow-x: auto;
     }
     .skill-type {
@@ -68,29 +60,11 @@
     }
     .skill {
         width: fit-content;
-        max-height: 200px;
         overflow-y: hidden;
         overflow-wrap: break-word;
     }
-    .skill#web {
-        grid-column: 1 / 2;
-        grid-row: 1 / 6;
-    }
-    .skill#programming {
-        grid-column: 3 / 6;
-        grid-row: 1 / 6;
-        width: 320px;
-    }
-    .skill#programming .skill-type {
-        display: inline-block;
-        margin-right: 10px;
-    }
     .skill#version-control {
         grid-column: 6 / 7;
-        grid-row: 1 / 6;
-    }
-    .skill#mobile {
-        grid-column: 7 / 9;
         grid-row: 1 / 6;
     }
     .skill#database {
@@ -103,13 +77,13 @@
         padding-bottom: 70px;
     }
     .contact .text .form {
-        width: 100%;
+        width: calc(100vw - 90px);
     }
     .contact .text .form * {
-        width: 100%;
+        width: calc(100vw - 90px);
     }
     .contact {
-        height: calc(100vh + var(--triangle-height) * 1 + 150px);
+        height: calc(100vh + var(--triangle-height) * 1);
     }
     .contact .down {
         top: calc(100vh + 15px);
